@@ -775,7 +775,7 @@ display: block;
 }
 
 /* Show toggle button on mobile */
-@media (max-width: 768px) {
+@media (max-width: 780px) {
   .nav-toggler {
     display: block; /* Force visibility on mobile */
   }
@@ -839,4 +839,36 @@ display: block;
 }
 .mobile-menu.open {
     transform: translateX(0); /* Slide in */
+}
+
+.contact-item p,
+.contact-item span {
+  word-break: break-all;     /* 🔑 Forces break within long words */
+  overflow-wrap: break-word;
+  white-space: normal;
+  font-size: 14px;
+  max-width: 100%;
+}
+
+
+.main-container, .contact-section, .row {
+  flex-wrap: wrap;
+  max-width: 100%;
+  overflow: visible;
+}
+/* For mobile devices */
+/* Default for large screens */
+.contact-row {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* For mobile */
+span {
+  word-break: break-word;
+}
+.info-item span {
+  word-break: break-word;
+  overflow-wrap: break-word;
+  display: inline-block;
 }
