@@ -501,6 +501,12 @@ h3.my-professional{
     text-align: justify;
     color:var(--text-black-700);  /* This line exists */
 }
+@media (max-width: 768px) {
+  .about-section {
+    padding: 15px;
+    font-size: 14px;
+  }
+}
 
 /* project section */
 .projects .project-heading {
@@ -843,11 +849,14 @@ display: block;
 
 .contact-item p,
 .contact-item span {
-  word-break: break-all;     /* 🔑 Forces break within long words */
+  word-break: normal;     /* 🔑 Forces break within long words */
   overflow-wrap: break-word;
   white-space: normal;
   font-size: 14px;
   max-width: 100%;
+  padding: 10px;
+line-height: 1.6;
+
 }
 
 
@@ -872,3 +881,20 @@ span {
   overflow-wrap: break-word;
   display: inline-block;
 }
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  width: 100vw;         /* Full viewport width */
+  padding: 0;           /* No padding */
+  margin: 0;            /* No margin */
+  box-sizing: border-box;
+}
+
+.text-content {
+  padding: 0 10px;      /* Optional: slight padding for readability */
+  width: 100%;
+}
+
