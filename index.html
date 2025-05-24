@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Web Page</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" />
+  <link rel="stylesheet" href="color-1.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Clicker+Script&display=swap" rel="stylesheet" />
+ 
+  <!-- Other head content -->
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+  <!--=============style switcher===================-->
+<link rel="stylesheet" href="style-switcher.css" />
+<link rel="alternate stylesheet" href="color-1.css" class="alternate-style" title="color-1" disabled>
+<link rel="alternate stylesheet" href="color-2.css" class="alternate-style" title="color-2" disabled>
+<link rel="alternate stylesheet" href="color-3.css" class="alternate-style" title="color-3" disabled>
+<link rel="alternate stylesheet" href="color-4.css" class="alternate-style" title="color-4" disabled>
+<link rel="alternate stylesheet" href="color-5.css" class="alternate-style" title="color-5" disabled>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+
+</head>
+
+</head>
+<body>
+  <div class="main-container">
+    <!--=============== Aside Start ===============-->
+<!-- Sidebar Nav (for large screens) -->
+<div class="aside">
+  <div class="logo">
+    <a href="#"><span>H</span>induja</a>
+  </div>
+  <div class="nav-toggler" onclick="toggleNav()">
+    <i class="fa fa-bars"></i>
+  </div>
+  <ul class="nav" id="main-nav">
+    <li><a href="#home" class="active"><i class="fa fa-home"></i> Home</a></li>
+    <li><a href="#about"><i class="fa fa-user"></i> About</a></li>
+    <li><a href="#skills"><i class="fa fa-list"></i> Skills</a></li>
+    <li><a href="#projects"><i class="fa fa-briefcase"></i> Projects</a></li>
+    <li><a href="#experience"><i class="fa fa-user-tie"></i> Experience</a></li>
+    <li><a href="#contact"><i class="fa fa-comments"></i> Contact</a></li>
+  </ul>
+</div>
+
+<!-- Mobile Menu (uses same list, hidden/shown by toggle) -->
+<div class="mobile-menu" id="mobile-menu">
+  <ul class="nav" id="mobile-nav">
+    <!-- You can copy the same <li> content here -->
+  </ul>
+</div>
+
+
+
+  <!--=============== Aside End ===============-->
+
+</div>
+
+    <!--=============== Aside End ===============-->
+
+    <!--=============== Main Content Start ===============-->
+    <div class="main-content">
+      <!--=============== Home Section Start ===============-->
+      <section  id="home" class="home section ">
+        <div class="container">
+          <div class="row">
+            <div class="home-info padd-15">
+              <h3 class="hello">Hello, My name is <span class="name">Hinduja </span></h3>
+              <h3 class="my-professional">I'm a <span class="typing">Fullstack Developer</span></h3>
+              <p>
+                I completed my college in 2024 at Paavai College of Engineering, specializing in Computer Science and Engineering. After graduation, I completed a Full Stack Development course in Java at Besant Technologies. I worked as an intern at both Besant Technologies and Verzeo.
+              </p>
+              <a href="#contact" class="btn hire-me">Hire Me</a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!--=============== Home Section End ===============-->
+
+      <!--=============== About Section Start ===============-->
+      <section  id="about" class="about section ">
+        <div class="container">
+          <div class="row">
+            <div class="section-title padd-15">
+              <h2>About Me</h2>
+            </div>
+          </div>
+          <div class="row">
+            <div class="about-content padd-15">
+              <div class="row">
+                <div class="about-text padd-15">
+                  <h3>I'm Hinduja Balakrishnan and <span>Fullstack Developer</span></h3>
+                  <p>
+                    I'm a passionate Full Stack Developer from Namakkal with a strong foundation in Computer Science and Engineering. I have experience in both front-end and back-end development, and I enjoy creating dynamic, responsive web applications. I'm committed to continuous learning and always eager to explore new technologies. My goal is to become a skilled and impactful software engineer who delivers quality results. I thrive on solving complex problems and contributing meaningfully to every project I work on.
+                  </p>
+                </div>
+              </div>
+              <div class="row">
+                <div class="personal-info padd-15">
+                  <div class="row">
+                    <div class="info-item padd-15"><p>Birthday: <span>7 May 2003</span></p></div>
+                    <div class="info-item padd-15"><p>Age: <span>22</span></p></div>
+                    <div class="info-item padd-15"><p>Country: <span>India</span></p></div>
+                    <div class="info-item padd-15"><p>State: <span>Tamil Nadu</span></p></div>
+                    <div class="info-item padd-15"><p>City: <span>Namakkal</span></p></div>
+                    <div class="info-item padd-15"><p>College: <span>Paavai College of Engineering</span></p></div>
+                    <div class="info-item padd-15"><p>Degree: <span>Bachelor of Engineering</span></p></div>
+                    <div class="info-item padd-15"><p>Stream: <span>Computer Science Engineering</span></p></div>
+                    <div class="info-item padd-15"><p>Languages Spoken: <span>Tamil, English</span></p></div>
+                    <div class="info-item padd-15"><p>Experience Level: <span>Intern-Level Experience</span></p></div>
+                    <div class="info-item padd-15"><p>Email: <span>hinduja0705@gmail.com</span></p></div>
+                    <div class="info-item padd-15"><p>Phone No: <span>8072647995</span></p></div>
+                  </div>
+                  <div class="row">
+                    <div class="button padd-15">
+                      <a href="#" class="btn">Download CV</a>
+                      <a href="#contact" class="btn hire-me">Hire Me</a>
+                    </div>
+                  </div>
+                </div>
+                <div  id="skills" class="skills padd-15">
+                  <div class="row">
+                    <div class="skill-item padd-15"><h5>Java</h5>
+                      <div class="progress"><div class="progress-in" style="width: 90%;"></div><div class="skill-percent">90%</div></div>
+                    </div>
+                    <div class="skill-item padd-15"><h5>Python</h5>
+                      <div class="progress"><div class="progress-in" style="width: 50%;"></div><div class="skill-percent">50%</div></div>
+                    </div>
+                    <div class="skill-item padd-15"><h5>HTML</h5>
+                      <div class="progress"><div class="progress-in" style="width: 86%;"></div><div class="skill-percent">86%</div></div>
+                    </div>
+                    <div class="skill-item padd-15"><h5>CSS</h5>
+                      <div class="progress"><div class="progress-in" style="width: 76%;"></div><div class="skill-percent">76%</div></div>
+                    </div>
+                    <div class="skill-item padd-15"><h5>JavaScript</h5>
+                      <div class="progress"><div class="progress-in" style="width: 89%;"></div><div class="skill-percent">89%</div></div>
+                    </div>
+                    <div class="skill-item padd-15"><h5>Spring Boot</h5>
+                      <div class="progress"><div class="progress-in" style="width: 89%;"></div><div class="skill-percent">89%</div></div>
+                    </div>
+                    <div class="skill-item padd-15"><h5>SQL</h5>
+                      <div class="progress"><div class="progress-in" style="width: 75%;"></div><div class="skill-percent">75%</div></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Education Section -->
+              <div id="education" class="row">
+                <div class="education padd-15">
+                  <h3 class="title">Education</h3>
+                  <div class="row">
+                    <div class="timeline-box padd-15">
+                      <div class="timeline shadow-dark">
+                        <div class="timeline-item">
+                          <div class="circle-dot"></div>
+                          <h3 class="timeline-data"><i class="fa fa-calendar"></i> 2020–2024</h3>
+                          <h4 class="timeline-title">Bachelor of Engineering</h4>
+                          <p class="timeline-text">
+                            Completed Bachelor of Engineering in Computer Science and Engineering from Paavai College of Engineering. Gained strong foundation in software development, data structures, and project work in machine learning and web development.
+                          </p>
+                        </div>
+                        <div class="timeline-item">
+                          <div class="circle-dot"></div>
+                          <h3 class="timeline-data"><i class="fa fa-calendar"></i> 2024–2025</h3>
+                          <h4 class="timeline-title">Full Stack Development Course</h4>
+                          <p class="timeline-text">
+                            Completed Full Stack Development course at Besant Technologies. Acquired hands-on skills in Java, Spring Boot, Python, React.js, SQL, HTML, CSS, JavaScript, and AngularJS.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Experience Section -->
+                <div id="experience" class="experience padd-15">
+                  <h3 class="title">Experience</h3>
+                  <div class="row">
+                    <div class="timeline-box padd-15">
+                      <div class="timeline shadow-dark">
+                        <div class="timeline-item">
+                          <div class="circle-dot"></div>
+                          <h3 class="timeline-data"><i class="fa fa-calendar"></i> 2022</h3>
+                          <h4 class="timeline-title">Data Science Intern at Verzeo</h4>
+                          <p class="timeline-text">
+                            I completed a 6-month internship at Verzeo (Remote, July 2022 to December 2022), where I learned Data Science and Machine Learning using Python. I worked on a project called Mobile Price Classification to predict price ranges of mobile phones based on their features.
+                          </p>
+                        </div>
+                        <div class="timeline-item">
+                          <div class="circle-dot"></div>
+                          <h3 class="timeline-data"><i class="fa fa-calendar"></i> 2024–2025</h3>
+                          <h4 class="timeline-title">Full Stack Development Intern at Besant Technologies</h4>
+                          <p class="timeline-text">
+                            Learned HTML, CSS, JavaScript, Java, Spring Boot, SQL, and Cloud basics. Built frontend websites like Pizza & Coffee Shop websites and backend projects like a Student Management System.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div> <!-- End of education and experience row -->
+            </div>
+          </div>
+        </div>
+      </section>
+      <!--=============== About Section End ===============-->
+        <!--=============== Projects Section Start ===============-->
+      <!-- ===== Projects Section Start ===== -->
+
+<section id="projects" class="projects section">
+  <div class="container">
+    <div class="row">
+      <div class="section-title padd-15">
+        <h2>Projects</h2>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="project-heading padd-15">
+        <h2>My Last Projects:</h2>
+      </div>
+    </div>
+
+    <div class="row project-list">
+      <!-- Project Item 1 -->
+      <div class="project-item padd-15">
+        <div class="project-item-inner shadow-dark">
+          <div class="project-img">
+            <img src="https://res.cloudinary.com/dfujam4jz/image/upload/v1747477197/Screenshot_705_zdpkrk.png" alt="Project 1" />
+          </div>
+          <div class="project-content">
+            <h3 class="project-title">Pizza Ordering Website</h3>
+            <p class="project-description">Designed a responsive pizza ordering interface using HTML, CSS, and JavaScript with engaging animations for a smooth user experience</p>
+            <a href="https://pizza-website-zuiw.vercel.app/" target="_blank" class="view-btn">Click here to view project</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Project Item 2 -->
+      <div class="project-item padd-15">
+        <div class="project-item-inner shadow-dark">
+          <div class="project-img">
+            <img src="https://res.cloudinary.com/dfujam4jz/image/upload/v1747922257/preview_n7flj3.png" alt="Project 2" />
+          </div>
+          <div class="project-content">
+            <h3 class="project-title">Coffee Shop Website</h3>
+            <p class="project-description">Built a stylish and interactive website with smooth scroll effects, animated transitions, and a responsive layout to enhance user engagement.</p>
+            <a href="https://coffee-website-rust.vercel.app/" target="_blank" class="view-btn">Click Here to View Project</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Project Item 3 -->
+      <div class="project-item padd-15">
+        <div class="project-item-inner shadow-dark">
+          <div class="project-img">
+            <img src="https://res.cloudinary.com/dfujam4jz/image/upload/v1747477467/Screenshot_706_ek3xul.png" alt="Project 3" />
+          </div>
+          <div class="project-content">
+            <h3 class="project-title">Camping Website</h3>
+            <p class="project-description">Developed a visually engaging and mobile-friendly website featuring animated hero sections, dynamic pricing cards, and event listings</p>
+            <a href="https://camping-website-git-main-odellao7s-projects.vercel.app/" class="view-btn">Click Here to View Project</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Project Item 4 -->
+      <div class="project-item padd-15">
+        <div class="project-item-inner shadow-dark">
+          <div class="project-img">
+            <img src="https://res.cloudinary.com/dfujam4jz/image/upload/v1747926040/portfolio_template_img_blqyxx.jpg" alt="Project 4" />
+          </div>
+          <div class="project-content">
+            <h3 class="project-title">Portfolio Website using React.js</h3>
+            <p class="project-description">Designed and developed a responsive personal portfolio to showcase projects, skills, and contact information. 
+                                           Included smooth animations and a clean, professional layout.</p>
+            <a href="https://react-portfolio-3w3u.vercel.app/" class="view-btn">Click Here to View Project</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Project Item 5 -->
+      <div class="project-item padd-15">
+        <div class="project-item-inner shadow-dark">
+          <div class="project-img">
+            <img src="https://res.cloudinary.com/dfujam4jz/image/upload/v1747478827/WhatsApp_Image_2025-05-17_at_16.16.00_2cd32887_adafrg.jpg" alt="Project 5" />
+          </div>
+          <div class="project-content">
+            <h3 class="project-title">A Student Management Project</h3>
+            <p class="project-description">A Student Management Project using Spring Boot is a web application that handles student data,</p>
+            <a href="https://github.com/odellao7/student-management-system" class="view-btn">Click Here to View Project</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Project Item 6 -->
+      <div class="project-item padd-15">
+        <div class="project-item-inner shadow-dark">
+          <div class="project-img">
+            <img src="https://res.cloudinary.com/dfujam4jz/image/upload/v1747926024/e-commerce_template_images_ijwdjw.jpg" alt="Project 6" />
+          </div>
+          <div class="project-content">
+            <h3 class="project-title">ASD Diagnosis Using Machine Learning</h3>
+            <p class="project-description">Developed a framework for real-time classification of Autism Spectrum Disorder (ASD) by integrating facial features, medical imaging, and diagnostic reports using machine learning.</p>
+            <a href="https://github.com/odellao7/Autismdetection-" class="view-btn">Click Here to View Project</a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+<!-- ===== Contact Section End ===== -->
+ <section id="contact" class="contact section">
+  <div class="container">
+    <!-- Section Title -->
+    <div class="row">
+      <div class="section-title padd-15">
+        <h2>Contact</h2>
+      </div>
+    </div>
+
+    <!-- Subtitle -->
+    <h3 class="contact-title padd-15">Have You Any Questions?</h3>
+
+    <!-- Contact Info Items -->
+    <div class="row">
+      <!-- Phone -->
+      <div class="contact-info-item padd-15">
+        <div class="icon">
+          <i class="fa fa-phone"></i>
+        </div>
+        <h4>Call Us On</h4>
+        <p>+91 8072647995</p>
+      </div>
+
+      <!-- Email -->
+      <div class="contact-info-item padd-15">
+        <div class="icon">
+          <i class="fa fa-envelope"></i>
+        </div>
+        <h4>Email</h4>
+        <p>hinduja0705@gmail.com</p>
+      </div>
+
+      <!-- LinkedIn -->
+      <div class="contact-info-item padd-15">
+        <div class="icon">
+          <i class="ri-linkedin-box-fill"></i>
+        </div>
+        <h4>LinkedIn</h4>
+        <p>
+          <a href="https://www.linkedin.com/in/hinduja-balakrishnan-2750a8220" target="_blank">
+            hinduja-balakrishnan-2750a8220
+          </a>
+        </p>
+      </div>
+    </div>
+
+    <!-- Email Form Title -->
+    <h3 class="contact-title padd-15">Send Me an Email</h3>
+    <h4 class="contact-sub-title padd-15">I will get back to you as soon as possible</h4>
+
+    <!-- Contact Form -->
+    <div class="row">
+      <div class="contact-form padd-15">
+        <form>
+          <div class="row">
+            <!-- Name -->
+            <div class="form-item col-6 padd-15">
+              <div class="form-group">
+                <input type="text" class="form-control" placeholder="Name">
+              </div>
+            </div>
+
+            <!-- Subject -->
+            <div class="form-item col-6 padd-15">
+              <div class="form-group">
+                <input type="text" class="form-control" placeholder="Subject">
+              </div>
+            </div>
+          </div>
+
+          <div class="row">
+            <!-- Message -->
+            <div class="form-item col-12 padd-15">
+              <div class="form-group">
+                <textarea class="form-control" placeholder="Message"></textarea>
+              </div>
+            </div>
+          </div>
+
+          <div class="row">
+            <!-- Button -->
+            <div class="form-item col-12 padd-15">
+              <button type="submit" class="btn">Send Message</button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+
+  </div>
+</section>
+</div>
+<!------=================Style Switcher start============-->
+<div class="style-switcher">
+  <div class="style-switcher-toggle s-icon">
+    <i class="fa fa-cog fa-spin"></i>
+  </div> <!-- ✅ Closing tag added -->
+  <div class="day-night s-icon">
+    <i class="fas fa-moon"></i>
+  </div>
+  <h4>Theme Colors</h4>
+  <div class="colors">
+    <span class="color-1" onclick="setActiveStyle('color-1')"></span>
+    <span class="color-2" onclick="setActiveStyle('color-2')"></span>
+    <span class="color-3" onclick="setActiveStyle('color-3')"></span>
+    <span class="color-4" onclick="setActiveStyle('color-4')"></span>
+    <span class="color-5" onclick="setActiveStyle('color-5')"></span>
+  </div>
+</div>
+
+<script src="main.js"></script>
+<script src="style-switcher.js"></script>
+
+</body>
+</html>
