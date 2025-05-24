@@ -19,9 +19,7 @@ html {
 
 
 
-body {
-    margin: 0;
-    padding: 0;
+.body {
     line-height: 1.5;
     font-size: 16px;
 }
@@ -47,7 +45,7 @@ u1{
     min-height: 100vh;
     display: block;
     position: relative; /* changed from 'block' */
-    left: 270px;
+    
     padding: 0 30px;
     opacity: 1;
 }
@@ -132,7 +130,28 @@ u1{
     box-shadow: 0 0 20px rgba(48,46,77,0.15);
 }
 
+/* Reduce home section height */
+.home.section {
+    min-height: auto !important; /* Remove 100vh constraint */
+    padding-bottom: 30px; /* Add bottom padding */
+}
 
+/* Adjust container spacing */
+.section .container {
+    padding-top: 200px !important; /* Reduced from 60px */
+    padding-bottom: 40px !important;
+    padding-left: 20px !important; /* Reduced from 70px */
+}
+
+/* Tighten section title spacing */
+.section-title {
+    margin-bottom: 30px !important; /* Reduced from 60px */
+}
+
+/* Add negative margin to about section */
+#about.section {
+    margin-top: -30px;
+}
 .aside {
     background: var(--bg-black-100);
     position: fixed;
@@ -341,7 +360,7 @@ h3.my-professional{
     font-size: 16px;
     line-height: 25px;
     color: var(--text-black-700);
-    text-align: justify;
+    
 }
 .about .about-content .personal-info{
     flex:0 0 60%;
@@ -424,7 +443,7 @@ h3.my-professional{
     flex:0 0 50%;
     max-width: 50%;
     margin-top: 30px;
-    text-align: justify;
+
 }
 .about .about-content h3.title{
     font-size: 24px;
