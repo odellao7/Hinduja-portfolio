@@ -26,3 +26,18 @@ window.addEventListener("DOMContentLoaded", () => {
 document.querySelector('.nav-toggler').addEventListener('click', function() {
   document.querySelector('.aside').classList.toggle('active');
 });
+function toggleNav() {
+    document.querySelector(".aside").classList.toggle("active");
+  }
+>
+  document.addEventListener("DOMContentLoaded", () => {
+    // Clone main nav to mobile nav
+    const mainNav = document.querySelector("#main-nav");
+    const mobileNav = document.querySelector("#mobile-nav");
+
+    if (mainNav && mobileNav) {
+      mobileNav.innerHTML = mainNav.innerHTML;
+    }
+  });
+
+

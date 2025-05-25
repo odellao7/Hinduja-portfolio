@@ -916,4 +916,28 @@ body {
   padding: 0 10px;      /* Optional: slight padding for readability */
   width: 100%;
 }
+@media (max-width: 768px) {
+  .main-content {
+    padding-left: 0 !important;
+  }
+}
+@media (max-width: 600px) {
+  .project-item {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+}
+@media (max-width: 480px) {
+  h3.hello, h3.my-professional {
+    font-size: 20px;
+  }
+  .home-info p {
+    font-size: 14px;
+  }
+}
+p, span, h3, .contact-info-item, .project-description {
+  word-break: break-word;
+  overflow-wrap: break-word;
+}
+
 
