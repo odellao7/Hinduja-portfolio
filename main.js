@@ -29,7 +29,7 @@ document.querySelector('.nav-toggler').addEventListener('click', function() {
 function toggleNav() {
     document.querySelector(".aside").classList.toggle("active");
   }
->
+
   document.addEventListener("DOMContentLoaded", () => {
     // Clone main nav to mobile nav
     const mainNav = document.querySelector("#main-nav");
@@ -39,5 +39,17 @@ function toggleNav() {
       mobileNav.innerHTML = mainNav.innerHTML;
     }
   });
+  document.getElementById('contactForm').addEventListener('submit', function(event) {
+      event.preventDefault();
 
-
+      emailjs.sendForm('service_9aj5dir', 'template_mh6p4kk', this)
+        .then(function() {
+          document.getElementById("statusMessage").innerText = "✅ Your message has been sent successfully!";
+          document.getElementById("statusMessage").style.color = "green";
+          document.getElementById("contactForm").reset();
+        }, function(error) {
+          console.error("EmailJS Error:", error);
+          document.getElementById("statusMessage").innerText = "❌ Failed to send message. Please try again.";
+          document.getElementById("statusMessage").style.color = "red";
+        });
+  });

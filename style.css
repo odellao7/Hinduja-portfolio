@@ -658,6 +658,7 @@ h3.my-professional{
 .contact .contact-info-item {
   flex: 0 0 25%;
   max-width: 25%;
+  padding: 10px;
   
 }
 .contact .contact-info-item .icon {
@@ -665,7 +666,7 @@ h3.my-professional{
 }
 .contact .contact-info-item .icon i {
   font-size: 25px;
-  color: red; /* uniform red color for all icons */
+  color: rgb(15, 14, 14); /* uniform red color for all icons */
 }
 .contact .contact-info-item h4 {
   font-size: 18px;
@@ -717,7 +718,17 @@ max-width: 100%;
 .contact .contact-form .btn{
     height: 50px;
     padding: 0 50px;
+    border-radius: 25px;
+    border: none;
+    background: var(--skin-color);
+    color: white;
+    cursor: pointer;
+    transition: 0.3s ease;
 }
+.contact .contact-form .btn:hover {
+  opacity: 0.9;
+}
+
 @media (max-width: 575px) {
     /* General layout: full width on small screens */
     .contact .contact-info-item,

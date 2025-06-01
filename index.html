@@ -20,7 +20,12 @@
 <link rel="alternate stylesheet" href="color-4.css" class="alternate-style" title="color-4" disabled>
 <link rel="alternate stylesheet" href="color-5.css" class="alternate-style" title="color-5" disabled>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-
+<script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+  <script>
+    (function() {
+      emailjs.init("H9mdH7gCVB2nNU7jF"); // Your Public Key
+    })();
+  </script>
 
 </head>
 
@@ -118,7 +123,7 @@
                   </div>
                   <div class="row">
                     <div class="button padd-15">
-                      <a href="#" class="btn">Download CV</a>
+                      <a href="https://drive.google.com/file/d/1_mVFxovRVykORfrmCvQPowCklXR2ZAAg/view?usp=sharing" class="btn" target="_blank">Download CV</a>
                       <a href="#contact" class="btn hire-me">Hire Me</a>
                     </div>
                   </div>
@@ -317,7 +322,7 @@
   </div>
 </section>
 <!-- ===== Contact Section End ===== -->
- <section id="contact" class="contact section">
+ <section id="contactform" class="contact section">
   <div class="container">
     <!-- Section Title -->
     <div class="row">
@@ -337,7 +342,7 @@
           <i class="fa fa-phone"></i>
         </div>
         <h4>Call Us On</h4>
-        <p><span> <strong>Phone No: 8672647995</strong><span></p>
+        <p><span><strong>Phone No: 8672647995</strong></span></p>
       </div>
 
       <!-- Email -->
@@ -370,19 +375,19 @@
     <!-- Contact Form -->
     <div class="row">
       <div class="contact-form padd-15">
-        <form>
+        <form id="contactForm">
           <div class="row">
             <!-- Name -->
             <div class="form-item col-6 padd-15">
               <div class="form-group">
-                <input type="text" class="form-control" placeholder="Name">
+                <input type="text" class="form-control" placeholder="Name" name="user_name" required>
               </div>
             </div>
 
             <!-- Subject -->
             <div class="form-item col-6 padd-15">
               <div class="form-group">
-                <input type="text" class="form-control" placeholder="Subject">
+                <input type="text" class="form-control" placeholder="Subject" name="subject" required>
               </div>
             </div>
           </div>
@@ -391,7 +396,7 @@
             <!-- Message -->
             <div class="form-item col-12 padd-15">
               <div class="form-group">
-                <textarea class="form-control" placeholder="Message"></textarea>
+                <textarea class="form-control" placeholder="Message" name="message" required></textarea>
               </div>
             </div>
           </div>
@@ -400,15 +405,14 @@
             <!-- Button -->
             <div class="form-item col-12 padd-15">
               <button type="submit" class="btn">Send Message</button>
+              <p id="statusMessage"></p>
             </div>
           </div>
         </form>
       </div>
     </div>
-
   </div>
 </section>
-</div>
 <!------=================Style Switcher start============-->
 <div class="style-switcher">
   <div class="style-switcher-toggle s-icon">
